@@ -4,18 +4,41 @@
 }
 
 body{
+    background-color: rgb(234, 255, 234);
    text-align: center;
+   /* cursor: none; */
    
 }
 .main-card{
-    height: 100%;
-    border-radius: 1%;
-    box-shadow: #c4afaf -4px -4px 8px, rgb(196, 196, 196) 4px 4px 8px;
-    background-color: rgb(234, 255, 234);
+    display: block;
+    /* height: 20%; */
+    border-radius: 1%; 
+    /* box-shadow: #c4afaf -4px -4px 8px, rgb(196, 196, 196) 4px 4px 8px;
+     */
 }
 img{
-    margin-right: 10%;
+    /* height:200px;
+    width: 200px; */
+    
+    /* margin-right: 50%; */
 }
+
+
+.info{
+   
+    width: 100%;
+   
+}
+
+.two .hi{
+    color: green;
+    position: relative;
+    /* margin-top: 10%; */
+    text-align: center;
+    /* margin-left: 10%; */
+}
+
+
 
 .social-media  a{
     /* text-decoration: none; */
@@ -23,9 +46,9 @@ img{
     background-color: whitesmoke;
     height: 2.5rem;
     width: 2.5rem;
-    line-height: 50px;
+    line-height: 2rem;
     font-size: 2rem;
-    margin: 0 10px;
+    /* margin: 0 10px; */
     color: rgb(8, 233, 147);
     display:inline-block;
     border-radius: 25%; 
@@ -48,5 +71,25 @@ img{
       color: blue
   }
   .social-media  a:hover{
-      color: green;
+      col id="point"or: green;
   } */
+
+
+  #point{
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      border: 2px slateblue dashed;
+      box-sizing: border-box;
+      box-shadow: goldenrod 2px 1px;
+      translate: 0.001s;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      pointer-events: none;
+  }
+
+img:hover ~ #point {
+    width: 50px;
+    height: 50px;
+    box-shadow: rebeccapurple 4px 4px;
+}

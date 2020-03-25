@@ -19,3 +19,12 @@ function myfunction(){
 }
 setInterval(myfunction, 1500);
 
+var cursor = document.getElementById('point')
+document.addEventListener('mouseover', function(e){
+        var x = e.clientX;
+        var y  = e.clientY;
+         cursor.style.top = y + 'px';
+         cursor.style.left = x + 'px';
+
+        
+    })
